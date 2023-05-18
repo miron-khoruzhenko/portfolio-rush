@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  height: 100vh;
+  width: 100%;
+  background: blue;
+}
+.body .intro {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.body .intro__navbar {
+  display: flex;
+  color: red;
+}
+.body .intro__navbar__start {
+  display: flex;
+  flex-direction: row;
+}

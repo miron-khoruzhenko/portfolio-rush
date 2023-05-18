@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+
+    .fas{
+        color: #D81324;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: #D81324;
+    }
+
+    .media{
+        font-size: 18px;
+        
+    }
+    
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+
+        &__contact{
+            display: flex;
+            justify-content: space-between;
+            padding:  15px 0;   
+            width: 100%;
+            background-color:whitesmoke;
+            //position: fixed;
+            top: 0;
+            
+
+            &__start{
+                display: flex;
+                margin-left: 3rem;
+                
+                &__address {
+                    margin-right: 2rem;
+                }
+            }
+
+            &__end{
+                display: flex;
+                margin-right: 40px;
+                
+
+                &__number{
+                    margin-right: 1rem;
+                }
+
+                &__media{
+
+                    gap: 10px;
+                    display: flex;
+                    
+                    
+
+                    &__item{
+                        background-color: white;
+                        width: 25px;
+                        height: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+
+                    }
+                }
+            }
+        }
+
+        &__navbar{
+            display: flex;
+            justify-content: space-between;
+            // padding:  15px 0;   
+            width: 100%;
+            background-color:white;
+            //position: fixed;
+            align-items: center;
+            // height: 40px;
+            
+            &__logo{
+                display: flex;
+                margin-left: 3rem;
+                font-size: 30px;
+                font-weight: bold;
+                
+                &__text{
+                    color: #D81324;
+                    margin-left: 2rem;
+                }
+            }
+            
+            &__nav{
+                display: flex;
+                gap: 10px;
+
+                
+                
+                &__list{
+                    display: flex;
+                    &__item{
+                        margin-left: 30px;
+                        list-style: none;
+                        padding: 30px 15px;
+                        
+                    }
+                }
+
+                &__button{
+                    padding: 30px 45px;
+                    margin-left: 30px;
+                    background-color: #D81324 ;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border: 0;
+                }
+            }
+        }
+            
+    }
+}
