@@ -113,3 +113,6 @@ body .intro__cover__images__two {
   width: 100%;
   height: 100%;
 }
+body .intro__cover__text {
+  display: flex;
+}

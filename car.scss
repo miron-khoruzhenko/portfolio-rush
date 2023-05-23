@@ -130,6 +130,7 @@ body{
             
         &__cover{
             display:flex ;
+            
 
             &__images{
                 width: 100%;
@@ -149,11 +150,14 @@ body{
                 &__two{
                     width: 100%;
                     height: 100%;
-                    
-                    //background: rgba(0,0,0,.7);
-
+                    //background-color: rgba(0, 0, 0, 1);
                     
                 }
+            }
+
+            &__text{
+                display: flex;
+                
             }
         }
     }
