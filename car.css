@@ -21,6 +21,8 @@ body .media {
 body .intro {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 body .intro__contact {
   display: flex;
@@ -95,24 +97,37 @@ body .intro__navbar__nav__button {
   cursor: pointer;
   border: 0;
 }
-body .intro__cover {
-  display: flex;
-}
-body .intro__cover__images {
+body .intro__container {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/carousel-bg-1.jpg);
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-size: cover;
 }
-body .intro__cover__images__one {
-  position: absolute;
-  right: 100px;
+body .intro__container__image {
+  position: relative;
+  left: 800px;
+  top: 100px;
 }
-body .intro__cover__images__two {
-  width: 100%;
-  height: 100%;
+body .intro__container__text {
+  position: relative;
+  bottom: 300px;
+  margin-left: 100px;
+  color: white;
+  font-weight: bold;
 }
-body .intro__cover__text {
-  display: flex;
+body .intro__container__text p {
+  font-size: 50px;
+}
+body .intro__container__button {
+  position: relative;
+  bottom: 200px;
+  margin-left: 100px;
+  background-color: #D81324;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  padding: 20px 60px;
 }

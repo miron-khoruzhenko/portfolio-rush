@@ -27,6 +27,8 @@ body{
     .intro{
         display: flex;
         flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
 
         &__contact{
             display: flex;
@@ -128,36 +130,52 @@ body{
             }
         }
             
-        &__cover{
-            display:flex ;
+        &__container{
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/carousel-bg-1.jpg);
+            width: 100%;
+            height: 100%;
+            //display: flex;
+            background-position: center;
+            background-size: cover;
             
-
-            &__images{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                //position: relative;
-
-
-                &__one{
-                    position: absolute; //resmin diğerinin üstünde durması için 
-                    right: 100px;
-                    
-                    
-                }
-                &__two{
-                    width: 100%;
-                    height: 100%;
-                    //background-color: rgba(0, 0, 0, 1);
-                    
-                }
+            
+            &__image{
+                //display: flex;
+                position: relative;
+                left: 800px;
+                top: 100px ;
             }
 
             &__text{
-                display: flex;
-                
+                position: relative;
+                bottom: 300px;
+                //left: 100px;
+                margin-left: 100px;
+                color: white;
+                font-weight: bold;
+                h2{
+                    
+                }
+                p{
+                    font-size: 50px;
+                }
+            }
+            &__button{
+                position: relative;
+                bottom: 200px;
+                margin-left: 100px;
+                background-color: #D81324 ;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                border: 0;
+                padding: 20px 60px;
+                // width: 200px;
+                //height: 50px;
+                .fas{
+                    
+                }
             }
         }
     }
