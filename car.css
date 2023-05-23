@@ -95,6 +95,21 @@ body .intro__navbar__nav__button {
   cursor: pointer;
   border: 0;
 }
-body .intro p {
-  color: blue;
+body .intro__cover {
+  display: flex;
+}
+body .intro__cover__images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .intro__cover__images__one {
+  position: absolute;
+  right: 100px;
+}
+body .intro__cover__images__two {
+  width: 100%;
+  height: 100%;
 }
