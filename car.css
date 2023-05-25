@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   width: 100%;
+  flex-direction: column;
 }
 body .fas {
   color: #D81324;
@@ -64,6 +65,7 @@ body .intro__navbar {
   width: 100%;
   background-color: white;
   align-items: center;
+  z-index: 999;
 }
 body .intro__navbar__logo {
   display: flex;
@@ -130,4 +132,141 @@ body .intro__container__button {
   cursor: pointer;
   border: 0;
   padding: 20px 60px;
+}
+body .jobs {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+body .jobs__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 20px;
+}
+body .jobs__container__item {
+  display: flex;
+  margin: 20px;
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+}
+body .jobs__container__item__icon {
+  margin-right: 10px;
+  margin-bottom: 85px;
+  font-size: 40px;
+  color: #D81324;
+}
+body .jobs__container__item__text h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+body .jobs__container__item__text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+body .about {
+  display: flex;
+  height: 100%;
+}
+body .about__image {
+  padding: 100px;
+}
+body .about__text {
+  padding: 70px 0;
+  margin-right: 200px;
+}
+body .about__text h3 {
+  color: #D81324;
+}
+body .about__text h2 {
+  font-size: 40px;
+  color: #0B2154;
+}
+body .about__text h2 span {
+  color: #D81324;
+  font-weight: bold;
+}
+body .about__text p {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+body .about__text__info {
+  display: flex;
+  flex-direction: column;
+}
+body .about__text__info__item {
+  display: flex;
+}
+body .about__text__info__item__number {
+  background-color: gray;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+body .about__text__info__item__number span {
+  font-size: 30px;
+}
+body .about__text__info__item__text {
+  margin-right: 80px;
+}
+body .about__text__info__item__text h4 {
+  font-size: 20px;
+  color: #0B2154;
+}
+body .about__text__info__item__text p {
+  color: black;
+  font-size: 18px;
+  margin-top: 5px;
+}
+body .about__text__button {
+  background-color: #D81324;
+  display: flex;
+  padding: 10px 40px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+body .transition {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)), url(img/carousel-bg-1.jpg);
+  width: 100%;
+  height: 30%;
+  background-position: center;
+  background-size: cover;
+}
+body .transition__container {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+body .transition__container__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+}
+body .transition__container__item__icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+body .transition__container__item__number {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+body .transition__container__item__text {
+  font-size: 18px;
+}
+body .explore {
+  width: 100%;
+  height: 100%;
 }
