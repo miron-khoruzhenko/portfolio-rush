@@ -1,10 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
 body {
+  font-family: "Lato", sans-serif;
   height: 100vh;
   width: 100%;
   flex-direction: column;
@@ -202,7 +209,7 @@ body .about__text__info__item {
   display: flex;
 }
 body .about__text__info__item__number {
-  background-color: gray;
+  background-color: gainsboro;
   padding: 10px;
   margin-right: 20px;
   margin-bottom: 5px;
@@ -266,7 +273,272 @@ body .transition__container__item__number {
 body .transition__container__item__text {
   font-size: 18px;
 }
-body .explore {
+body .aboutus {
   width: 100%;
   height: 100%;
+}
+body .aboutus__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+body .aboutus__header h5 {
+  font-size: 14px;
+  color: #D81324;
+}
+body .aboutus__header h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0B2154;
+}
+body .aboutus__container {
+  display: flex;
+  gap: 1rem;
+}
+body .aboutus__container__content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  gap: 1rem;
+}
+body .aboutus__container__content__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  margin-left: 30px;
+  background-color: gainsboro;
+  border: 0;
+  cursor: pointer;
+  /*&:first-child{
+      margin-top: 0;
+  }
+  &:last-child{
+      margin-bottom: 0;
+  } */
+}
+body .aboutus__container__content__item__icon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #D81324;
+}
+body .aboutus__container__content__item__text {
+  font-size: 23px;
+  font-weight: bold;
+}
+body .aboutus__container__image {
+  width: 33%;
+  margin-left: 10px;
+}
+body .aboutus__container__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  width: 34%;
+  margin-right: 20px;
+}
+body .aboutus__container__info h4 {
+  font-size: 35px;
+  color: #0B2154;
+  margin-right: 20px;
+}
+body .aboutus__container__info p {
+  font-size: 20px;
+}
+body .aboutus__container__info__check {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+body .aboutus__container__info__check span {
+  display: flex;
+  gap: 10px;
+}
+body .aboutus__container__info__check span .fa-check {
+  color: green;
+}
+body .aboutus__container__info__button {
+  padding: 20px 80px;
+  background-color: #D81324;
+  color: white;
+  border: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+body .booking {
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)), url(img/carousel-bg-2.jpg);
+  background-position: center;
+}
+body .booking__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body .booking__container__text {
+  width: 60%;
+  margin-right: 60px;
+}
+body .booking__container__text h3 {
+  color: white;
+  font-size: 40px;
+  width: 80%;
+  font-weight: bold;
+}
+body .booking__container__text p {
+  color: white;
+  font-size: 20px;
+  width: 90%;
+  display: flex;
+  margin-top: 20px;
+}
+body .booking__container__form {
+  width: 40%;
+  height: 100%;
+  background-color: #D81324;
+  padding: 0 20px;
+}
+body .booking__container__form h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-top: 50px;
+}
+body .booking__container__form__button {
+  display: block;
+  padding: 30px;
+  width: 100%;
+  background-color: #0B2154;
+  color: white;
+  margin-top: 20px;
+  font-weight: 700;
+}
+body .booking__container__form__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+body .booking__container__form__item__firstline {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+body .booking__container__form__item__firstline__name, body .booking__container__form__item__firstline__mail {
+  padding: 0 10px;
+  height: 4rem;
+}
+body .booking__container__form__item__firstline__name {
+  text-align: left;
+  width: 100%;
+  display: flex;
+}
+body .booking__container__form__item__firstline__mail {
+  text-align: left;
+  width: 100%;
+}
+body .booking__container__form__item__secondline {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
+}
+body .booking__container__form__item__secondline__service {
+  width: 100%;
+  padding: 0 10px;
+  height: 4rem;
+}
+body .booking__container__form__item__secondline__date {
+  padding: 0 10px;
+  width: 100%;
+  height: 4rem;
+}
+body .booking__container__form__item__request {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+body .technicians {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+body .technicians__heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+body .technicians__heading h5 {
+  font-size: 14px;
+  color: #D81324;
+  font-weight: bold;
+}
+body .technicians__heading span {
+  font-size: 30px;
+  color: #0B2154;
+  font-weight: bold;
+}
+body .technicians__container {
+  display: flex;
+}
+body .technicians__container__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+  margin: 20px;
+  padding-bottom: 30px;
+}
+body .technicians__container__item:hover .technicians__container__item__modal__bg {
+  transform: scale(1);
+}
+body .technicians__container__item__img {
+  width: 100%;
+  height: 100%;
+}
+body .technicians__container__item__modal {
+  position: relative;
+}
+body .technicians__container__item__modal__bg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #D81324;
+  transition: 0.5s ease-in-out transform;
+  transform: scale(0);
+  color: #D81324;
+}
+body .technicians__container__item__modal__bg .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: white;
+  margin: 0 10px;
+  transition: 0.2s linear;
+  transition-property: background, color;
+  font-size: 1.25rem;
+}
+body .technicians__container__item__modal__bg .box:hover {
+  color: white;
+  background: #0B2154;
 }

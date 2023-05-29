@@ -186,44 +186,188 @@
     </div>
   </section>
 
-  <section class="explore">
-    <div class="explore__header">
+  <section class="aboutus">
+    <div class="aboutus__header">
       <h5>OUR SERVICES</h5>
       <h3>Explore Our Services</h3>
     </div>
 
-    <div class="explore__container">
+    <div class="aboutus__container">
 
-      <div class="explore__container__content">
-        <button class="explore__container__content__item">
-          <i class="fa-solid fa-car-side explore__container__content__item__icon"></i>
-          <span class="explore__container__content__item__text">Diagnostic Test</span>
+      <div class="aboutus__container__content">
+        <button class="aboutus__container__content__item">
+          <i class="fa-solid fa-car-side aboutus__container__content__item__icon"></i>
+          <span class="aboutus__container__content__item__text">Diagnostic Test</span>
         </button>
-        <button class="explore__container__content__item">
-          <i class="fa-solid fa-car explore__container__content__item__icon"></i>
-          <span class="explore__container__content__item__text">Engine Servicing</span>
+
+        <button class="aboutus__container__content__item">
+          <i class="fa-solid fa-car aboutus__container__content__item__icon"></i>
+          <span class="aboutus__container__content__item__text">Engine Servicing</span>
         </button>
-        <button class="explore__container__content__item">
-          <i class="fa-solid fa-gear explore__container__content__item__icon"></i>
-          <span class="explore__container__content__item__text">Tires Replacement</span>
+
+        <button class="aboutus__container__content__item">
+          <i class="fa-solid fa-gear aboutus__container__content__item__icon"></i>
+          <span class="aboutus__container__content__item__text">Tires Replacement</span>
         </button>
-        <button class="explore__container__content__item">
-          <i class="fa-solid fa-oil-can explore__container__content__item__icon"></i>
-          <span class="explore__container__content__item__text">Oil Changing</span>
+
+        <button class="aboutus__container__content__item">
+          <i class="fa-solid fa-oil-can aboutus__container__content__item__icon"></i>
+          <span class="aboutus__container__content__item__text">Oil Changing</span>
         </button>
       </div>
 
-      <img src="img/service-3.jpg" class="explore__container__image">
+      <img src="img/service-3.jpg" class="aboutus__container__image">
 
-      <div class="explore__container__info">
+      <div class="aboutus__container__info">
         <h4>15 Years Of Experience In Auto Servicing</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur cum ad adipisci deleniti asperiores fugiat voluptas optio, voluptatum vero.</p>
-        <span><i class="fa-solid fa-check"></i>Quality Servicing</span>
-        <span><i class="fa-solid fa-check"></i>Expert Workers</span>
-        <span><i class="fa-solid fa-check"></i>Modern Equipment</span>
+        <div class="aboutus__container__info__check">
+          <span><i class="fa-solid fa-check"></i>Quality Servicing</span>
+          <span><i class="fa-solid fa-check"></i>Expert Workers</span>
+          <span><i class="fa-solid fa-check"></i>Modern Equipment</span>
+        </div>
 
-        <button class="explore__container__info__button"> READ MORE <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="aboutus__container__info__button"> READ MORE <i class="fa-solid fa-arrow-right"></i></button>
       </div>
+    </div>
+
+  </section>
+
+  <section class="booking ">
+    <div class="booking__container container">
+        <div class="booking__container__text">
+          <h3>Certified and Award Winning <br> Car Repair Service Provider</h3>
+          <p>Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+        </div>
+
+        <div class="booking__container__form">
+          <h2>Book For a Service</h2>
+          
+          <form action="kayit.php" method="get" class="booking__container__form__item">   <!--veriler adres çubuğunda görünerek gidicek.post olsa gizli gider -->
+        
+          <div class="booking__container__form__item__firstline">
+            <input type="text" size="10" required placeholder="Your Name" class="booking__container__form__item__firstline__name">
+            <input type="email" name="email" required placeholder="Your Mail" /class="booking__container__form__item__firstline__mail">
+          </div>
+
+          <div class="booking__container__form__item__secondline">
+
+            <select name="Select a Service" class="booking__container__form__item__secondline__service" > 
+              <option>Service 1</option>
+              <option>Service 2</option>
+              <option>Service 3</option>
+              <option>Service 4</option>
+            </select>
+            <input type="date" name="telno" required placeholder="Service Date" class="booking__container__form__item__secondline__date">
+          </div>
+            
+          <textarea placeholder="Special Request" class="booking__container__form__item__request"></textarea>
+            
+        </form>
+
+        <button class="booking__container__form__button">Book Now</button>
+        </div>
+
+    </div>
+  </section>
+
+  <section class="technicians">
+    <div class="technicians__heading">
+      <h5>OUR TECHNICIANS</h5>
+      <span>Our Expert Technicians</span>
+    </div>
+
+    <div class="technicians__container">
+      <div class="technicians__container__item">
+
+        <div class="technicians__container__item__modal"> <!--modal, backgroundun sınırlarını belirledi-->
+          <img src="img/team-1.jpg" class="technicians__container__item__img">
+          
+          <div class="technicians__container__item__modal__bg">
+            <div class="box">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div> <!--modal end-->
+
+        <h2>Javier Lorem</h2>
+        <span>Expert</span>
+      </div>
+
+      <div class="technicians__container__item">
+
+        <div class="technicians__container__item__modal"> <!--modal, backgroundun sınırlarını belirledi-->
+          <img src="img/team-2.jpg" class="technicians__container__item__img">
+          
+          <div class="technicians__container__item__modal__bg">
+            <div class="box">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div> <!--modal end-->
+
+        <h2>Javier Lorem</h2>
+        <span>Expert</span>
+      </div>
+
+      <div class="technicians__container__item">
+
+        <div class="technicians__container__item__modal"> <!--modal, backgroundun sınırlarını belirledi-->
+          <img src="img/team-3.jpg" class="technicians__container__item__img">
+          
+          <div class="technicians__container__item__modal__bg">
+            <div class="box">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div> <!--modal end-->
+
+        <h2>Javier Lorem</h2>
+        <span>Expert</span>
+      </div>
+
+      <div class="technicians__container__item">
+
+        <div class="technicians__container__item__modal"> <!--modal, backgroundun sınırlarını belirledi-->
+          <img src="img/team-4.jpg" class="technicians__container__item__img">
+          
+          <div class="technicians__container__item__modal__bg">
+            <div class="box">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div> <!--modal end-->
+
+        <h2>Javier Lorem</h2>
+        <span>Expert</span>
+      </div>
+
+
+        
 
 
     </div>

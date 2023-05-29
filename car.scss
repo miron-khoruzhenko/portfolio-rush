@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
 body{
+    font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -272,7 +281,7 @@ body{
 
                     display: flex;
                     &__number{
-                        background-color: gray;
+                        background-color: gainsboro;
                         padding: 10px;
                         margin-right:  20px;
                         margin-bottom: 5px;
@@ -352,71 +361,380 @@ body{
         }
     }
 
-    .explore{
+    .aboutus{
         width: 100%;
         height: 100%;
         
         &__header{
-            
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
             h5{
-                
+                font-size: 14px;
+                color: #D81324;
+
             }
             h3{
-                
+                font-size: 30px;
+                font-weight: bold;
+                color: #0B2154;
             }
         }
         &__container{
-            
+            display: flex;
+            gap: 1rem;
+                //justify-content: space-around;
 
             &__content{
-                
-                
+                display: flex;
+                flex-direction: column;
+                width: 33% ; //width vererek boşluk oluşturursan içindekiler daha kolay hareket eder. ama buttonları genişletirken paddingle yap
+                gap: 1rem; //flexle gap kullanmak daha sağlıklı. boşukları alt ve üst için tam ayarlıyor
+
                 &__item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 25%;
+                    margin-left: 30px;
+                    background-color:gainsboro;
+                    border: 0;
+                    cursor: pointer;
                     
+                    // width: 30%;
+                    // padding: 20px 180px ;
                     
+                    // margin-top: 1rem;
+                    // margin-bottom: 1rem; //boşluğu marginle de ayarlayabilirsin ama kaymalar için childleri kullanman lazım
+
+                    /*&:first-child{
+                        margin-top: 0;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    } */
+                    
+                
+
 
                     &__icon{
+                        font-size: 30px;
+                        margin-right: 10px;
+                        color: #D81324;
                         
                     }
                     &__text{
+                        font-size: 23px;
+                        font-weight: bold;
+                        // word-wrap: normal;
                         
-                        
+
                     }
                 }
             }
 
             &__image{
-                //margin-left:0px;
-                
-                //margin-top: 10px;
+                width: 33%;
+                margin-left: 10px;
                 
             }
 
             &__info{
-            
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: start;
+                width: 34%;
+                margin-right:20px;
                 
                 h4{
+                font-size: 35px;
+                color: #0B2154;
+                margin-right: 20px;
                 
                 }
                 p{
-                
+                font-size: 20px;
                 }
-                span{
+                
+                &__check{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    font-size: 20px;
+                    span{
+                    display: flex;
+                    gap: 10px;
                     
                     
-                    
-                    .fa-check{
-                        
+                        .fa-check{
+                            color: green;
+                            
+                        }
                     }
                 }
+                
                 &__button{
-            
+                    padding: 20px 80px ;
+                    background-color: #D81324;
+                    color: white;
+                    border: 0 ;
+                    font-size: 15px;
+                    font-weight: bold;
             
                 }
             }
         }
     }
     
+    .booking{
+        width: 100%;
+        height: 80%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)), url(img/carousel-bg-2.jpg);
+        background-position: center;
 
+        &__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            &__text{
+                width: 60%;
+                // margin-top: 170px;
+                margin-right: 60px;
+                h3{
+                    color: white;
+                    font-size: 40px;
+                    width: 80%;
+                    font-weight: bold;
+                }
+                p{
+                    color: white;
+                    font-size: 20px;
+                    width: 90%;
+                    display: flex;
+                    margin-top: 20px;
+                }
+            }
+
+            &__form{
+                width:40%;
+                height: 100%; 
+                // padding: 30px 100px ;
+
+                //display: flex;
+                // flex-direction: column;
+                background-color: #D81324;
+                padding: 0 20px;
+                
+                h2{
+                    text-align: center; //text i bu şekilde ortala displayle değil
+                    // display: flex;
+                    // justify-content: center;
+                    font-size: 3rem;
+                    color: white;
+                    margin-top: 50px
+                    
+                }
+
+                &__button{
+                    display: block;
+                    // margin: 0 20px; //ortaladı
+                    // justify-content: center;
+                    padding: 30px;
+                    width: 100%;
+                    background-color: #0B2154;
+                    color: white;
+                    margin-top: 20px;
+                    font-weight: 700;
+                }
+
+                &__item{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;    
+                    
+                    &__firstline{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-around;
+                        align-items: center;
+                        gap: 20px;
+                        // padding: 5px 20px;
+                        margin-top: 40px;
+
+                        &__name, &__mail{
+                            padding: 0 10px;
+                            height: 4rem;
+                            
+                            
+                        }
+
+                        &__name{
+                            
+                            text-align: left;
+                            width: 100%;
+                            display: flex;
+                            
+                        }
+                        &__mail{
+                            //padding: 20px 30px;
+                            text-align: left;
+                            width: 100%;
+
+                        }
+                    }
+
+                    &__secondline{
+                        display: flex;
+                        width: 100%;
+                        //justify-content: space-around;
+                        //align-items: center;
+                        gap: 20px;
+                        // padding: 5px 20px;
+                        margin-top: 20px;
+                    
+                        &__service{
+                            width: 100%;
+                            padding: 0 10px;
+                            height: 4rem;
+                        }
+                        &__date{
+                            padding: 0 10px;
+                            width: 100%;
+                            height: 4rem;
+                            
+                        }
+                    }
+
+                    &__request{
+                        width: 100%;
+                        min-height: 100px;
+                        resize: none;
+                        padding: 10px ;
+                        margin-top: 20px;
+                        
+                    }   
+                }
+            }
+        }
+    }
+
+    .technicians{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction:column ;
+        
+        &__heading{
+            display: flex;
+            align-items:center ;
+            flex-direction: column;
+            margin-top: 20px;
+
+            h5{
+                font-size: 14px;
+                color: #D81324;
+                font-weight: bold;
+            }
+            span{
+                font-size: 30px;
+                color: #0B2154;
+                font-weight: bold;
+            }
+        }
+
+        &__container{
+            display: flex;
+            
+            
+            &__item{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: gainsboro;
+                margin: 20px;
+                padding-bottom: 30px;
+                    &:hover{
+                        .technicians__container__item__modal__bg{
+                            // max-width: 100%;
+                            // max-height: 100%;
+                            transform: scale(1);
+
+                        }
+                    }
+            
+            
+
+                &__img{
+                    width: 100%;
+                    height: 100%;           
+                }
+
+                &__modal{
+                    position: relative;
+            
+                    &__bg{
+                        position: absolute;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        top: 0;
+                        left: 0;
+                        
+                        width: 100%;
+                        height: 100%;
+
+                        background: #D81324;
+
+                        transition: .5s ease-in-out transform;
+                        transform: scale(0);
+                        color:#D81324;
+                        ;
+
+                        .box{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            width: 50px;
+                            height: 50px;
+                            background: white;
+                            margin: 0 10px;
+
+                            transition: .2s linear;
+                            transition-property: background, color;
+
+                            font-size: 1.25rem;
+
+                            &:hover{
+                                color: white;
+                                background:#0B2154;
+                            }
+                        }
+                    }
+                }
+
+                h2{
+                    
+                }
+                span{
+
+                }
+                &__card{
+                    
+
+                    &__icon{
+
+                    }
+                }
+            }
+        }
+    }
 
 }
