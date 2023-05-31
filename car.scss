@@ -9,7 +9,22 @@
 .container{
     max-width: 1400px;
     margin: auto;
+}
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #D81324;
+    color: #fff;
+    //text-align: center;
+    //line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 body{
@@ -502,12 +517,17 @@ body{
         height: 80%;
         background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.7)), url(img/carousel-bg-2.jpg);
         background-position: center;
+        // max-width: 2000px;
+        
+        
 
         &__container{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
+            
+            
 
             &__text{
                 width: 60%;
@@ -761,14 +781,19 @@ body{
         }
 
         &__container{
-            
+            height: 70%;
             display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+            gap: 100px;
             &__item{
+                width: 20%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 60px;
+                //margin: 10px 100px ;
                 margin-top: 50px;
+                min-width: 400px; //kutu ve yazısı genişlesinse min width ver. kutu genişlesin yazı sabit kalsın istiyosan padding
 
                 &__img{
                     border-radius: 100%;
@@ -785,9 +810,37 @@ body{
                 &__text{
                     background-color: gainsboro;
                     text-align: center;
-                    padding: 40px;
                     margin-top: 10px;
+                    padding: 20px 20px;
+                    width: 100%;
                 }
+            }
+        }
+
+        &__box{
+            display: flex;
+            justify-content: center;
+            //padding: 20px 20px; 
+            //background-color: whitesmoke;
+            margin-top: 30px;
+            
+            &__dot{
+                
+                box-sizing: border-box;
+                
+                display: flex;
+                cursor: pointer;
+                width:1rem;
+                border: 1px solid gainsboro;
+                height: 1rem;
+                margin-left: 10px;
+
+                &:hover{
+                    background-color: #D81324;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+                
             }
         }
     }
@@ -878,15 +931,16 @@ body{
                         display: flex;
                         flex-direction: column;
                         gap: 10px;
-                        transition: 1s;
-
-                    }
-                    &__text{
+                        &__text{
+                            transition: .5s;
+                            &:hover{
+                                color: red;
+                                cursor: pointer;
+                                transform: scale(1);
+    
+                            }
                         
-                        &:hover{
-                            color: red;
-
-                        }
+                    }
                     }
                 }
 

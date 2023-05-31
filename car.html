@@ -6,15 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="car.css">
   <title>car service</title>
 </head>
 <body>
+
+</head>
+<body>
   
+  <button class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  <script>
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-to-top').style.display = 'block';
+      } else {
+        document.querySelector('.scroll-to-top').style.display = 'none';
+      }
+    }
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
   <!--intro-->
   <section class="intro">
     <!--contact-->
-    <div class="intro__contact">
+    <div class="intro__contact ">
       <div class="intro__contact__start">
 
         <div class="intro__contact__start__address">
@@ -84,7 +110,7 @@
   </section>
 
   <!--job section-->
-  <section class="jobs">
+  <section class="jobs container">
     <div class="jobs__container" id="home">
 
       <div class="jobs__container__item">
@@ -186,7 +212,7 @@
     </div>
   </section>
 
-  <section class="aboutus" id="services">
+  <section class="aboutus container" id="services" >
     <div class="aboutus__header">
       <h5>OUR SERVICES</h5>
       <h3>Explore Our Services</h3>
@@ -277,7 +303,7 @@
       <span>Our Expert Technicians</span>
     </div>
 
-    <div class="technicians__container">
+    <div class="technicians__container container">
       <div class="technicians__container__item">
 
         <div class="technicians__container__item__modal"> <!--modal, backgroundun sınırlarını belirledi-->
@@ -370,7 +396,7 @@
   </section>
 
 
-  <section class="testimonial">
+  <section class="testimonial container">
     <div class="testimonial__heading">
       <h5>TESTIMONIAL</h5>
       <span>Our Clients Say!</span>
@@ -396,13 +422,64 @@
         </div>
       </div>
 
-      <div class="testimonial__container__item">
+      
+      <div class="testimonial__container__item ">
         <img src="img/testimonial-1.jpg" class="testimonial__container__item__img">
         <h2>Client Name</h2>
         <span>Profession</span>
         <div class="testimonial__container__item__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas repellat tempore adipisci odit, ut modi iste iusto eius incidunt.
         </div>
+      </div>
+
+      <div class="testimonial__container__item ">
+        <img src="img/testimonial-1.jpg" class="testimonial__container__item__img">
+        <h2>Client Name</h2>
+        <span>Profession</span>
+        <div class="testimonial__container__item__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas repellat tempore adipisci odit, ut modi iste iusto eius incidunt.
+        </div>
+      </div>
+      <div class="testimonial__container__item ">
+        <img src="img/testimonial-1.jpg" class="testimonial__container__item__img">
+        <h2>Client Name</h2>
+        <span>Profession</span>
+        <div class="testimonial__container__item__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas repellat tempore adipisci odit, ut modi iste iusto eius incidunt.
+        </div>
+      </div>
+      <div class="testimonial__container__item ">
+        <img src="img/testimonial-1.jpg" class="testimonial__container__item__img">
+        <h2>Client Name</h2>
+        <span>Profession</span>
+        <div class="testimonial__container__item__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas repellat tempore adipisci odit, ut modi iste iusto eius incidunt.
+        </div>
+      </div>
+      <div class="testimonial__container__item ">
+        <img src="img/testimonial-1.jpg" class="testimonial__container__item__img">
+        <h2>Client Name</h2>
+        <span>Profession</span>
+        <div class="testimonial__container__item__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas repellat tempore adipisci odit, ut modi iste iusto eius incidunt.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="testimonial__box">
+        
+      <div class="testimonial__box__dot">
+        
+      </div>
+      <div class="testimonial__box__dot">
+        
+      </div>
+      <div class="testimonial__box__dot">
+        
+      </div>
+      <div class="testimonial__box__dot">
+        
       </div>
     </div>
   </section>
@@ -492,6 +569,8 @@
           <a href="#">FAQs</a>
         </div>
       </div>
+
+      
 
 
       
