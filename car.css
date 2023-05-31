@@ -125,6 +125,9 @@ body .intro__container__text {
   color: white;
   font-weight: bold;
 }
+body .intro__container__text h2 {
+  margin-left: 5px;
+}
 body .intro__container__text p {
   font-size: 50px;
 }
@@ -141,7 +144,7 @@ body .intro__container__button {
   padding: 20px 60px;
 }
 body .jobs {
-  height: 70%;
+  height: 50%;
   width: 100%;
   display: flex;
 }
@@ -149,11 +152,10 @@ body .jobs__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 100px 20px;
+  margin: 200px 20px;
 }
 body .jobs__container__item {
   display: flex;
-  margin: 20px;
   padding: 80px;
   justify-content: center;
   align-items: center;
@@ -167,20 +169,26 @@ body .jobs__container__item__icon {
 body .jobs__container__item__text h2 {
   margin-bottom: 20px;
   font-weight: bold;
+  color: #0B2154;
 }
 body .jobs__container__item__text p {
   font-size: 20px;
   margin-bottom: 20px;
+  color: #0B2154;
+}
+body .jobs__container__item__text a {
+  text-decoration: underline;
+  color: #0B2154;
 }
 body .about {
   display: flex;
   height: 100%;
 }
 body .about__image {
-  padding: 100px;
+  padding: 50px 100px;
 }
 body .about__text {
-  padding: 70px 0;
+  padding: 55px 0;
   margin-right: 200px;
 }
 body .about__text h3 {
@@ -275,13 +283,13 @@ body .transition__container__item__text {
 }
 body .aboutus {
   width: 100%;
-  height: 100%;
+  height: 102%;
 }
 body .aboutus__header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 body .aboutus__header h5 {
   font-size: 14px;
@@ -293,6 +301,7 @@ body .aboutus__header h3 {
   color: #0B2154;
 }
 body .aboutus__container {
+  margin-top: 30px;
   display: flex;
   gap: 1rem;
 }
@@ -417,6 +426,7 @@ body .booking__container__form__button {
   color: white;
   margin-top: 20px;
   font-weight: 700;
+  font-size: 20px;
 }
 body .booking__container__form__item {
   display: flex;
@@ -473,6 +483,7 @@ body .technicians {
   height: 80%;
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 body .technicians__heading {
   display: flex;
@@ -491,6 +502,7 @@ body .technicians__heading span {
   font-weight: bold;
 }
 body .technicians__container {
+  margin-top: 20px;
   display: flex;
 }
 body .technicians__container__item {
@@ -544,7 +556,7 @@ body .technicians__container__item__modal__bg .box:hover {
 }
 body .testimonial {
   width: 100%;
-  height: 80%;
+  height: 75%;
   display: flex;
   flex-direction: column;
 }
@@ -552,6 +564,7 @@ body .testimonial__heading {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 body .testimonial__heading h5 {
   font-size: 14px;
@@ -653,6 +666,10 @@ body .footer__container__start__services__item {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: 1s;
+}
+body .footer__container__start__services__text:hover {
+  color: red;
 }
 body .footer__container__start__newsletter {
   width: 25%;
